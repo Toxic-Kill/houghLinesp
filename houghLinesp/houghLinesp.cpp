@@ -7,7 +7,7 @@ using namespace cv;
 int main()
 {
 	cv::Mat cannyMat;
-	cv::Mat gryMat= cv::imread("D:\\Files\\metal-part-distorted-03.png",0);
+	cv::Mat gryMat = cv::imread("D:\\Files\\metal-part-distorted-03.png", 0);
 	cv::Mat srcMat = cv::imread("D:\\Files\\metal-part-distorted-03.png");//读取图像
 	//检测图像是否读取成功
 	if (srcMat.empty())
@@ -35,4 +35,3 @@ int main()
 	cv::imshow("canny", cannyMat);
 	waitKey(0);
 }
-
